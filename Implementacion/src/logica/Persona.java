@@ -6,11 +6,12 @@ public abstract class Persona {
 	public String fechadeNacimiento;
 	public String nacionalidad;
 	public String email;
+	public String cargo;
 	public double celular;
 	//public **imagen documento**//
 	public String login;
 	public String password;
-	public Persona(String nombre, double cedula, String fechadeNacimiento, String nacionalidad, String email,
+	public Persona(String cargo,String nombre, double cedula, String fechadeNacimiento, String nacionalidad, String email,
 			double celular, String login, String password) {
 		super();
 		this.nombre = nombre;
@@ -21,6 +22,7 @@ public abstract class Persona {
 		this.celular = celular;
 		this.login = login;
 		this.password = password;
+		this.cargo = cargo;
 	}
 	public String getNombre() {
 		return nombre;
@@ -69,6 +71,12 @@ public abstract class Persona {
 	}
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	public String getCargo() {
+		return cargo;
+	}
+	public void setCargo(String cargo) {
+		this.cargo = cargo;
 	}
 	
 	
